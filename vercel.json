@@ -1,6 +1,7 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
+  "buildCommand": "cd site && npm install && npm run build",
+  "outputDirectory": "site/dist",
+  "framework": "vite",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [

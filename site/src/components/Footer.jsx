@@ -172,12 +172,12 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Sixth Sense Gym. All rights reserved.
         </span>
         <a
-          href="https://optyx.dev"
+          href="https://optyxai.com"
           target="_blank"
           rel="noopener noreferrer"
           className="font-[family-name:var(--font-body)] text-xs text-white/10 hover:text-[var(--gold)] transition-colors"
         >
-          Designed by Optyx
+          Designed by OptyxAI
         </a>
       </div>
 
