@@ -31,7 +31,7 @@ export default function Nav() {
       gsap.fromTo(
         navRef.current,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 2.8 }
+        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.5 }
       );
     });
     return () => ctx.revert();
@@ -115,7 +115,7 @@ export default function Nav() {
 
           {/* Hamburger */}
           <button
-            className="lg:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-[6px] z-[110]"
+            className="lg:hidden relative w-11 h-11 flex flex-col items-center justify-center gap-[6px] z-[110]"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >

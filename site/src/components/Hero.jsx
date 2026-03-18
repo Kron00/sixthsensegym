@@ -31,7 +31,7 @@ export default function Hero() {
       gsap.fromTo(
         bgRef.current,
         { scale: 1.3, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1.8, ease: 'power3.out', delay: 2.6 }
+        { scale: 1, opacity: 1, duration: 1.4, ease: 'power3.out', delay: 0.3 }
       );
 
       // Background parallax on scroll
@@ -48,7 +48,7 @@ export default function Hero() {
       });
 
       // Content timeline
-      const tl = gsap.timeline({ delay: 2.6 });
+      const tl = gsap.timeline({ delay: 0.3 });
 
       // Label fade up
       tl.fromTo(
@@ -159,7 +159,7 @@ export default function Hero() {
         {/* Main headline */}
         <h1
           ref={headlineRef}
-          className="font-[family-name:var(--font-display)] text-[var(--white)] text-[clamp(3.5rem,12vw,10rem)] leading-[0.85] tracking-[0.02em]"
+          className="font-[family-name:var(--font-display)] text-[var(--white)] text-[clamp(2.2rem,8vw,10rem)] leading-[0.85] tracking-[0.02em]"
         >
           {headlineWords.map((word, wi) => (
             <span key={wi} className="inline-block mr-[0.25em]">

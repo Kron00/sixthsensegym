@@ -102,7 +102,7 @@ export default function Banner() {
     >
       {/* Row 1 - scrolls left */}
       <div ref={row1Ref} className="whitespace-nowrap animate-marquee">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(4rem,12vw,10rem)] text-white/[0.03] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2.5rem,8vw,10rem)] text-white/[0.03] leading-none">
           {row1Text}
           {row1Text}
         </span>
@@ -110,7 +110,7 @@ export default function Banner() {
 
       {/* Row 2 - scrolls right */}
       <div ref={row2Ref} className="whitespace-nowrap animate-marquee-reverse mt-4">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(3rem,8vw,7rem)] text-[var(--gold)]/[0.08] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,7rem)] text-[var(--gold)]/[0.08] leading-none">
           {row2Text}
           {row2Text}
         </span>
@@ -118,7 +118,7 @@ export default function Banner() {
 
       {/* Row 3 - scrolls left */}
       <div ref={row3Ref} className="whitespace-nowrap animate-marquee mt-4">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(3rem,8vw,7rem)] text-white/[0.02] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,7rem)] text-white/[0.02] leading-none">
           {row1Text}
           {row1Text}
         </span>

@@ -96,7 +96,7 @@ function FAQItem({ faq, index }) {
           {faq.q}
         </span>
         <span
-          className={`w-8 h-8 rounded-full border flex items-center justify-center flex-shrink-0 ml-4 transition-all duration-300 ${
+          className={`w-10 h-10 rounded-full border flex items-center justify-center flex-shrink-0 ml-4 transition-all duration-300 ${
             open
               ? 'rotate-45 border-[var(--gold)] bg-[var(--gold)]/10'
               : 'border-[var(--black)]/10'

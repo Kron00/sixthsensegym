@@ -101,7 +101,7 @@ export default function Mission() {
     <section
       ref={sectionRef}
       id="mission"
-      className="relative bg-[var(--cream)] py-32 md:py-44 px-6 overflow-hidden"
+      className="relative bg-[var(--cream)] py-20 md:py-44 px-6 overflow-hidden"
     >
       {/* Decorative gold dot — top right */}
       <div

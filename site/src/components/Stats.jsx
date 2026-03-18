@@ -101,7 +101,7 @@ export default function Stats() {
                 data-stat-num
                 data-target={stat.value}
                 data-decimals={stat.decimals || 0}
-                className="font-[family-name:var(--font-display)] text-6xl md:text-7xl text-white"
+                className="font-[family-name:var(--font-display)] text-5xl md:text-7xl text-white"
               >
                 0
               </span>

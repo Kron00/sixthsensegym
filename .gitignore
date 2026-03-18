@@ -12,3 +12,6 @@ dist-ssr
 *.sln
 *.sw?
 .playwright-mcp
+*.png
+*.heic
+index.html

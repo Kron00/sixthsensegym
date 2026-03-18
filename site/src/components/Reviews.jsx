@@ -54,7 +54,7 @@ function Star({ filled }) {
 
 function ReviewCard({ review }) {
   return (
-    <div className="w-[340px] md:w-[400px] mx-2 p-6 md:p-8 rounded-xl bg-white border border-[var(--black)]/[0.04] flex-shrink-0">
+    <div className="w-[300px] md:w-[400px] mx-2 p-5 md:p-8 rounded-xl bg-white border border-[var(--black)]/[0.04] flex-shrink-0">
       <div className="h-[2px] w-12 bg-[var(--gold)]/40 mb-4" />
       <div className="flex gap-1 mb-4">
         {[1, 2, 3, 4, 5].map((i) => (

@@ -22,7 +22,7 @@ export default function Loader({ onComplete }) {
     tl.fromTo(
       logoRef.current,
       { opacity: 0, scale: 0.85 },
-      { opacity: 1, scale: 1, duration: 1, ease: 'power3.out' },
+      { opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out' },
       0
     );
 
@@ -31,17 +31,17 @@ export default function Loader({ onComplete }) {
     if (letters?.length) {
       tl.fromTo(
         letters,
-        { opacity: 0, y: 8 },
-        { opacity: 1, y: 0, duration: 0.04, stagger: 0.04, ease: 'power2.out' },
-        0.5
+        { opacity: 0, y: 6 },
+        { opacity: 1, y: 0, duration: 0.03, stagger: 0.02, ease: 'power2.out' },
+        0.3
       );
     }
 
     // Progress bar fill
     tl.to(
       barFillRef.current,
-      { scaleX: 1, duration: 2.2, ease: 'power2.inOut' },
-      0.3
+      { scaleX: 1, duration: 1.2, ease: 'power2.inOut' },
+      0.2
     );
 
     // Counter from 0 to 100
@@ -49,7 +49,7 @@ export default function Loader({ onComplete }) {
       counter,
       {
         value: 100,
-        duration: 2.2,
+        duration: 1.2,
         ease: 'power2.inOut',
         onUpdate: () => {
           if (counterRef.current) {
@@ -57,14 +57,14 @@ export default function Loader({ onComplete }) {
           }
         },
       },
-      0.3
+      0.2
     );
 
     // Exit: fade up logo, tagline, bar, counter
     tl.to(
       [logoRef.current, taglineRef.current, barFillRef.current?.parentElement, counterRef.current],
-      { opacity: 0, y: -30, duration: 0.4, ease: 'power3.in', stagger: 0.05 },
-      2.6
+      { opacity: 0, y: -20, duration: 0.3, ease: 'power3.in', stagger: 0.03 },
+      1.5
     );
 
     // Clip container away
@@ -72,10 +72,10 @@ export default function Loader({ onComplete }) {
       containerRef.current,
       {
         clipPath: 'inset(0 0 100% 0)',
-        duration: 0.6,
+        duration: 0.5,
         ease: 'power4.inOut',
       },
-      2.9
+      1.7
     );
 
     return () => tl.kill();

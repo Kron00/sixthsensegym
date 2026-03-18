@@ -61,7 +61,7 @@ export default function CTA() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-36 md:py-52 px-6 overflow-hidden"
+      className="relative py-24 md:py-52 px-6 overflow-hidden"
     >
       {/* Background image */}
       <div className="absolute inset-0 overflow-hidden">
@@ -84,7 +84,7 @@ export default function CTA() {
         <div className="overflow-hidden mt-4 mb-6">
           <h2
             ref={titleRef}
-            className="font-[family-name:var(--font-display)] text-[clamp(3rem,8vw,6rem)] tracking-[0.02em] text-white leading-none"
+            className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,8vw,6rem)] tracking-[0.02em] text-white leading-none"
             style={{ transform: 'translateY(100%)' }}
           >
             READY TO{' '}
