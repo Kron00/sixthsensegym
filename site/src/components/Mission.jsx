@@ -101,7 +101,7 @@ export default function Mission() {
     <section
       ref={sectionRef}
       id="mission"
-      className="relative bg-[var(--cream)] py-20 md:py-44 px-6 overflow-hidden"
+      className="relative bg-[var(--cream)] py-12 md:py-44 px-6 overflow-hidden"
     >
       {/* Decorative gold dot — top right */}
       <div
@@ -129,7 +129,7 @@ export default function Mission() {
             <span key={i} className="block overflow-hidden">
               <span
                 ref={(el) => (linesRef.current[i] = el)}
-                className={`block font-[family-name:var(--font-display)] text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.9] tracking-[0.02em] uppercase ${
+                className={`block font-[family-name:var(--font-display)] text-[clamp(1.8rem,7vw,5.5rem)] leading-[0.9] tracking-[0.02em] uppercase ${
                   line.gold ? 'text-[var(--gold)]' : 'text-[var(--black)]'
                 }`}
               >

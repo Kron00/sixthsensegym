@@ -67,7 +67,7 @@ export default function Stats() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[var(--black)] py-24 md:py-32 px-6"
+      className="relative overflow-hidden bg-[var(--black)] py-12 md:py-32 px-6"
     >
       {/* Grid overlay */}
       <div
@@ -80,11 +80,11 @@ export default function Stats() {
       />
 
       {/* Decorative 6TH */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none font-[family-name:var(--font-display)] text-[20rem] text-white/[0.015] leading-none">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none font-[family-name:var(--font-display)] text-[10rem] md:text-[20rem] text-white/[0.015] leading-none">
         6TH
       </div>
 
-      <div className="relative max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+      <div className="relative max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12">
         {stats.map((stat, i) => (
           <div
             key={stat.label}
@@ -101,7 +101,7 @@ export default function Stats() {
                 data-stat-num
                 data-target={stat.value}
                 data-decimals={stat.decimals || 0}
-                className="font-[family-name:var(--font-display)] text-5xl md:text-7xl text-white"
+                className="font-[family-name:var(--font-display)] text-4xl md:text-7xl text-white"
               >
                 0
               </span>

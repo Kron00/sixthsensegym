@@ -98,11 +98,11 @@ export default function Banner() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[var(--black)] py-20 md:py-28"
+      className="relative overflow-hidden bg-[var(--black)] py-10 md:py-28"
     >
       {/* Row 1 - scrolls left */}
       <div ref={row1Ref} className="whitespace-nowrap animate-marquee">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2.5rem,8vw,10rem)] text-white/[0.03] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(1.5rem,8vw,10rem)] text-white/[0.03] leading-none">
           {row1Text}
           {row1Text}
         </span>
@@ -110,7 +110,7 @@ export default function Banner() {
 
       {/* Row 2 - scrolls right */}
       <div ref={row2Ref} className="whitespace-nowrap animate-marquee-reverse mt-4">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,7rem)] text-[var(--gold)]/[0.08] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(1.2rem,6vw,7rem)] text-[var(--gold)]/[0.08] leading-none">
           {row2Text}
           {row2Text}
         </span>
@@ -118,7 +118,7 @@ export default function Banner() {
 
       {/* Row 3 - scrolls left */}
       <div ref={row3Ref} className="whitespace-nowrap animate-marquee mt-4">
-        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(2rem,6vw,7rem)] text-white/[0.02] leading-none">
+        <span className="inline-block font-[family-name:var(--font-display)] text-[clamp(1.2rem,6vw,7rem)] text-white/[0.02] leading-none">
           {row1Text}
           {row1Text}
         </span>
@@ -141,7 +141,7 @@ export default function Banner() {
         <div className="overflow-hidden">
           <h2
             data-reveal
-            className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,7vw,5.5rem)] tracking-[0.02em] text-white leading-[1.1]"
+            className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,7vw,5.5rem)] tracking-[0.02em] text-white leading-[1.1]"
           >
             EQUIPPED FOR THE{' '}
             <span className="text-[var(--gold)]">SERIOUS</span>

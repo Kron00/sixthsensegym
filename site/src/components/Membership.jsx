@@ -80,8 +80,8 @@ function PlanCard({ plan }) {
     <div
       className={`relative rounded-2xl h-full flex flex-col ${
         plan.highlight
-          ? 'bg-[var(--dark)] p-8 md:p-10'
-          : 'bg-white/[0.03] border border-white/[0.06] p-8 md:p-10'
+          ? 'bg-[var(--dark)] p-5 md:p-10'
+          : 'bg-white/[0.03] border border-white/[0.06] p-5 md:p-10'
       }`}
     >
       {/* Most Popular badge */}
@@ -105,7 +105,7 @@ function PlanCard({ plan }) {
 
       {/* Price */}
       <div className="flex items-baseline gap-1 mt-4 mb-6">
-        <span className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white">
+        <span className="font-[family-name:var(--font-display)] text-4xl md:text-6xl text-white">
           ${plan.price}
         </span>
         <span className="font-[family-name:var(--font-body)] text-sm text-white/40">
@@ -235,7 +235,7 @@ export default function Membership() {
     <section
       id="membership"
       ref={sectionRef}
-      className="relative overflow-hidden bg-[var(--black)] py-24 md:py-36 px-6"
+      className="relative overflow-hidden bg-[var(--black)] py-12 md:py-36 px-6"
     >
       {/* Grid overlay */}
       <div
@@ -249,7 +249,7 @@ export default function Membership() {
 
       <div className="relative max-w-6xl mx-auto">
         {/* Header */}
-        <div ref={headerRef} className="text-center mb-16 md:mb-20">
+        <div ref={headerRef} className="text-center mb-10 md:mb-16 lg:mb-20">
           <p
             data-label
             className="font-[family-name:var(--font-body)] text-xs tracking-[0.3em] uppercase text-[var(--gold)] mb-4 opacity-0"
@@ -259,7 +259,7 @@ export default function Membership() {
           <div className="overflow-hidden">
             <h2
               data-title
-              className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,7vw,5.5rem)] tracking-[0.02em] text-white leading-[1.1]"
+              className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,7vw,5.5rem)] tracking-[0.02em] text-white leading-[1.1]"
             >
               CHOOSE YOUR PATH
             </h2>
@@ -269,7 +269,7 @@ export default function Membership() {
         {/* Cards */}
         <div
           ref={cardsRef}
-          className="grid md:grid-cols-3 gap-6 md:gap-8 items-stretch"
+          className="grid md:grid-cols-3 gap-4 md:gap-8 items-stretch"
         >
           {plans.map((plan) => (
             <PlanCard key={plan.name} plan={plan} />

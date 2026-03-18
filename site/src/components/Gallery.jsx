@@ -102,7 +102,7 @@ export default function Gallery() {
     <section className="bg-[var(--cream)] px-6 pb-20 md:pb-32">
       <div
         ref={gridRef}
-        className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 auto-rows-[160px] md:auto-rows-[200px]"
+        className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1.5 md:gap-3 auto-rows-[120px] md:auto-rows-[200px]"
       >
         {images.map((image, i) => (
           <div

@@ -4,13 +4,13 @@ export default function Ticker() {
   const repeated = Array(8).fill(text).join('');
 
   return (
-    <div className="w-full bg-[var(--black)] py-4 overflow-hidden">
+    <div className="w-full bg-[var(--black)] py-2.5 md:py-4 overflow-hidden">
       {/* Top gold line */}
       <div className="h-[1px] bg-[var(--gold)]/20 mb-4" />
 
       <div className="relative flex whitespace-nowrap">
         <div className="animate-marquee flex shrink-0">
-          <span className="font-[family-name:var(--font-display)] text-xl md:text-2xl tracking-[0.15em] text-[var(--gold)]/60">
+          <span className="font-[family-name:var(--font-display)] text-base md:text-2xl tracking-[0.15em] text-[var(--gold)]/60">
             {repeated.split('✦').map((segment, i, arr) => (
               <span key={i}>
                 {segment}
@@ -22,7 +22,7 @@ export default function Ticker() {
           </span>
         </div>
         <div className="animate-marquee flex shrink-0">
-          <span className="font-[family-name:var(--font-display)] text-xl md:text-2xl tracking-[0.15em] text-[var(--gold)]/60">
+          <span className="font-[family-name:var(--font-display)] text-base md:text-2xl tracking-[0.15em] text-[var(--gold)]/60">
             {repeated.split('✦').map((segment, i, arr) => (
               <span key={i}>
                 {segment}

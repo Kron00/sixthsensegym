@@ -147,7 +147,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-start justify-end max-w-7xl mx-auto px-5 md:px-8 pb-20 md:pb-28">
+      <div className="relative z-10 h-full flex flex-col items-start justify-end max-w-7xl mx-auto px-5 md:px-8 pb-10 md:pb-28">
         {/* Location label */}
         <p
           ref={labelRef}
@@ -159,7 +159,7 @@ export default function Hero() {
         {/* Main headline */}
         <h1
           ref={headlineRef}
-          className="font-[family-name:var(--font-display)] text-[var(--white)] text-[clamp(2.2rem,8vw,10rem)] leading-[0.85] tracking-[0.02em]"
+          className="font-[family-name:var(--font-display)] text-[var(--white)] text-[clamp(2rem,8vw,10rem)] leading-[0.85] tracking-[0.02em]"
         >
           {headlineWords.map((word, wi) => (
             <span key={wi} className="inline-block mr-[0.25em]">
@@ -186,7 +186,7 @@ export default function Hero() {
         {/* Subtitle */}
         <p
           ref={subtitleRef}
-          className="mt-4 text-white/50 text-base md:text-lg max-w-md font-[family-name:var(--font-body)] leading-relaxed opacity-0"
+          className="mt-4 text-white/50 text-base md:text-lg max-w-xs md:max-w-md font-[family-name:var(--font-body)] leading-relaxed opacity-0"
         >
           Ontario CA&rsquo;s premier 24/7 private membership gym. Family-owned.
           Built for serious athletes.

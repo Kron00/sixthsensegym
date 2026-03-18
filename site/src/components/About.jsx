@@ -109,9 +109,9 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="bg-[var(--cream)] py-24 md:py-36 px-6"
+      className="bg-[var(--cream)] py-12 md:py-36 px-6"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-20 items-center">
         {/* Left — Image */}
         <div
           ref={imageRef}
@@ -137,7 +137,7 @@ export default function About() {
           <div className="overflow-hidden mt-3 mb-8">
             <h2
               ref={titleRef}
-              className="font-[family-name:var(--font-display)] text-[clamp(2.2rem,5vw,4rem)] tracking-[0.02em] text-[var(--black)] leading-none"
+              className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,5vw,4rem)] tracking-[0.02em] text-[var(--black)] leading-none"
               style={{ transform: 'translateY(100%)' }}
             >
               BUILT BY A FAMILY,{' '}

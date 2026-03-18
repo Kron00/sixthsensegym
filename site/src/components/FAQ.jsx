@@ -154,17 +154,17 @@ export default function FAQ() {
     <section
       ref={sectionRef}
       id="faq"
-      className="bg-[var(--cream)] py-24 md:py-36 px-6"
+      className="bg-[var(--cream)] py-12 md:py-36 px-6"
     >
       <div className="max-w-3xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-8 md:mb-14">
           <span className="font-[family-name:var(--font-body)] text-xs tracking-[0.2em] uppercase text-[var(--gold-dark)]">
             Questions
           </span>
           <div className="overflow-hidden mt-3">
             <h2
               ref={titleRef}
-              className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,7vw,5rem)] tracking-[0.02em] text-[var(--black)] leading-none"
+              className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,7vw,5rem)] tracking-[0.02em] text-[var(--black)] leading-none"
               style={{ transform: 'translateY(100%)' }}
             >
               FAQ

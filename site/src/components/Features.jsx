@@ -144,7 +144,7 @@ function FeatureRow({ feature, index }) {
       <div className="overflow-hidden">
         <h3
           data-title
-          className="font-[family-name:var(--font-display)] text-[clamp(2.2rem,5vw,4rem)] tracking-[0.02em] text-[var(--black)] leading-[1.1]"
+          className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,5vw,4rem)] tracking-[0.02em] text-[var(--black)] leading-[1.1]"
         >
           {feature.title}
         </h3>
@@ -196,8 +196,8 @@ function FeatureRow({ feature, index }) {
   return (
     <div
       ref={rowRef}
-      className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center ${
-        index > 0 ? 'mt-24 md:mt-36' : ''
+      className={`grid md:grid-cols-2 gap-6 md:gap-16 items-center ${
+        index > 0 ? 'mt-12 md:mt-36' : ''
       }`}
     >
       {isReversed ? (
@@ -219,7 +219,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="bg-[var(--cream)] py-24 md:py-36 px-6"
+      className="bg-[var(--cream)] py-12 md:py-36 px-6"
     >
       <div className="max-w-6xl mx-auto">
         {features.map((feature, i) => (

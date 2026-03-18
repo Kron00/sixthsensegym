@@ -48,7 +48,7 @@ export default function Footer() {
     <footer
       ref={footerRef}
       id="footer"
-      className="bg-[var(--black)] pt-20 pb-8 px-6 relative overflow-hidden"
+      className="bg-[var(--black)] pt-10 md:pt-20 pb-8 px-6 relative overflow-hidden"
     >
       {/* Top accent line */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[var(--gold)]/30 to-transparent" />
@@ -60,7 +60,7 @@ export default function Footer() {
       <div className="hidden md:block absolute top-32 right-24 w-[200px] h-[1px] bg-[var(--gold)]/20 rotate-[35deg] pointer-events-none" />
       <div className="hidden md:block absolute top-44 right-32 w-[120px] h-[1px] bg-[var(--gold)]/20 rotate-[35deg] pointer-events-none" />
 
-      <div ref={contentRef} className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 md:gap-16 mb-16 relative z-10">
+      <div ref={contentRef} className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 md:gap-16 mb-8 md:mb-16 relative z-10">
         {/* Col 1 — Brand */}
         <div>
           <img
@@ -183,7 +183,7 @@ export default function Footer() {
 
       {/* Large decorative text */}
       <div className="mt-8 pointer-events-none select-none">
-        <p className="font-[family-name:var(--font-display)] text-[clamp(3rem,10vw,8rem)] text-white/[0.015] text-center tracking-[0.1em] leading-none">
+        <p className="font-[family-name:var(--font-display)] text-[clamp(1.5rem,10vw,8rem)] text-white/[0.015] text-center tracking-[0.1em] leading-none">
           STILL WATERS RUN DEEP
         </p>
       </div>

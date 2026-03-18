@@ -54,7 +54,7 @@ function Star({ filled }) {
 
 function ReviewCard({ review }) {
   return (
-    <div className="w-[300px] md:w-[400px] mx-2 p-5 md:p-8 rounded-xl bg-white border border-[var(--black)]/[0.04] flex-shrink-0">
+    <div className="w-[280px] md:w-[400px] mx-2 p-5 md:p-8 rounded-xl bg-white border border-[var(--black)]/[0.04] flex-shrink-0">
       <div className="h-[2px] w-12 bg-[var(--gold)]/40 mb-4" />
       <div className="flex gap-1 mb-4">
         {[1, 2, 3, 4, 5].map((i) => (
@@ -99,16 +99,16 @@ export default function Reviews() {
     <section
       ref={sectionRef}
       id="reviews"
-      className="bg-[var(--cream)] py-24 md:py-36 overflow-hidden"
+      className="bg-[var(--cream)] py-12 md:py-36 overflow-hidden"
     >
-      <div className="px-6 max-w-6xl mx-auto mb-16">
+      <div className="px-6 max-w-6xl mx-auto mb-8 md:mb-16">
         <span className="font-[family-name:var(--font-body)] text-xs tracking-[0.2em] uppercase text-[var(--gold-dark)]">
           Testimonials
         </span>
         <div className="overflow-hidden mt-3">
           <h2
             ref={titleRef}
-            className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,7vw,5rem)] tracking-[0.02em] text-[var(--black)] leading-none"
+            className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,7vw,5rem)] tracking-[0.02em] text-[var(--black)] leading-none"
             style={{ transform: 'translateY(100%)' }}
           >
             WHAT MEMBERS SAY
