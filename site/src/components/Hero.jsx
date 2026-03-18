@@ -31,7 +31,7 @@ export default function Hero() {
       gsap.fromTo(
         bgRef.current,
         { scale: 1.3, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1.4, ease: 'power3.out', delay: 0.3 }
+        { scale: 1, opacity: 1, duration: 1.4, ease: 'power3.out', delay: 2.2 }
       );
 
       // Background parallax on scroll
@@ -48,7 +48,7 @@ export default function Hero() {
       });
 
       // Content timeline
-      const tl = gsap.timeline({ delay: 0.3 });
+      const tl = gsap.timeline({ delay: 2.2 });
 
       // Label fade up
       tl.fromTo(

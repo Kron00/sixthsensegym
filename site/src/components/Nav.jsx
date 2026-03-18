@@ -31,7 +31,7 @@ export default function Nav() {
       gsap.fromTo(
         navRef.current,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.5 }
+        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 2.4 }
       );
     });
     return () => ctx.revert();

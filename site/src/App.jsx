@@ -34,28 +34,24 @@ function App() {
 
   return (
     <>
-      <Loader onComplete={() => setLoading(false)} />
-      {!loading && (
-        <>
-          <Cursor />
-          <Nav />
-          <main>
-            <Hero />
-            <Ticker />
-            <Mission />
-            <Gallery />
-            <Stats />
-            <Banner />
-            <Features />
-            <Membership />
-            <Reviews />
-            <About />
-            <FAQ />
-            <CTA />
-          </main>
-          <Footer />
-        </>
-      )}
+      {loading && <Loader onComplete={() => setLoading(false)} />}
+      <Cursor />
+      <Nav />
+      <main>
+        <Hero />
+        <Ticker />
+        <Mission />
+        <Gallery />
+        <Stats />
+        <Banner />
+        <Features />
+        <Membership />
+        <Reviews />
+        <About />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
     </>
   )
 }
